@@ -188,6 +188,9 @@ section.perfil-container .texto-perfil p {
     max-width: 350px;
     padding: 30px 2%;
   }
+  section.perfil-container .perfil-wraper {
+    padding-top: 0;
+  }
 
   section.perfil-container .perfil-wraper2 {
     /* position: absolute;
@@ -199,6 +202,8 @@ section.perfil-container .texto-perfil p {
     flex-direction: column;
     height: 100%;
     */
+    position: static;
+    height: auto;
     display: inline-block;
     text-align: center;
   }
