@@ -27,14 +27,19 @@ header .logo img {
   float: left;
   width: 236px;
 }
-header nav {
+
+nav.menu-mobile {
+  display: none;
   float: right;
 }
-header nav ul {
+header nav.menu-desktop {
+  float: right;
+}
+header nav.menu-desktop ul {
   padding: 8px 0;
   list-style-type: none;
 }
-header nav ul li {
+header nav.menu-desktop ul li {
   float: left;
   font-size: 14px;
   text-transform: uppercase;
@@ -146,6 +151,12 @@ section.perfil-container .texto-perfil p {
   margin-top: 8px;
 }
 @media screen and (max-width: 768px) {
+  nav.menu-desktop {
+    display: none;
+  }
+  nav.menu-mobile {
+    display: block;
+  }
   section.servicos > .container {
     /*
     max-width: 800px;
